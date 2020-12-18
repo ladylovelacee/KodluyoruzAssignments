@@ -2,14 +2,18 @@
 
 public class Apple : CollectableBase
 {
-    public Apple() 
+    #region Constructor
+    public Apple()
     {
         action = "Ye";
     }
+    #endregion
 
+    #region Override Methods
     public override void Use()
     {
         Debug.Log("Can artti.");
         base.Dispose();
     }
+    #endregion
 }
